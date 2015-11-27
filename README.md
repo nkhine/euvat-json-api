@@ -45,6 +45,18 @@ In this file, you can set the same options as for the command line.
 
 The following more detailed instructions are also available from your server [http://127.0.0.1:8040/]().
 
+##Docker
+
+Run Services
+============
+  echo == euvat
+  docker run -d --restart always --name euvat \
+         euvat
+
+Link your app
+=============
+  docker run -d --restart always --name my_app \
+     --link euvat:euvat
 
 ## The JSON API
 
